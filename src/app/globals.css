@@ -35,52 +35,52 @@ a {
   --softTextColor: #626262;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+.container {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--textColor);
 }
 
-.container{
-    min-height: 100vh;
-    background-color: var(--bg);
-    color: var(--textColor);
+.wrapper {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
-.wrapper{
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rebeccapurple;
-    padding: 0px 80px;
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    max-width: 1366px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 475px;
+  }
 }
 
-@media screen and (max-width:1536px){
-    .wrapper{
-        max-width: 1366px;
-    }
+.ql-container{
+  font-size: 28px !important;
 }
 
-@media screen and (max-width:1280px){
-    .wrapper{
-        max-width: 1024px;
-    }
-}
-
-@media screen and (max-width:1024px){
-    .wrapper{
-        max-width: 768px;
-        padding: 0px 40px;
-    }
-}
-
-@media screen and (max-width:768px){
-    .wrapper{
-        max-width: 640px;
-    }
-}
-
-@media screen and (max-width:640px){
-    .wrapper{
-        max-width: 475px;
-    }
+.quill > .ql-container > .ql-editor.ql-blank::before{
+  color: #b3b3b1;
 }
